@@ -12,7 +12,7 @@ body{
 
 a{
     text-decoration: none;
-    color: black;
+    color: #ddd;
 }
 
 .cont{
@@ -22,25 +22,61 @@ a{
 /* -----------------------nav bar--------------- */
 #nav-bar{
     display:flex;
+    align-items: center;
     justify-content: space-between;
-    padding: 10px 0px;
+    padding: .5rem 10rem;
     position: sticky;
     top:0;
+    background: rgba(0,0,0,.8);
+    z-index: 1;
 }
 
 #nav-bar .links{
     list-style: none;
+    padding: .75rem;
     display: inline-block;
-    margin: 0px 10px;
-    padding: 10px;
-    background: #B5EAEA;
     font-weight: 400;
     border-radius: 5px;
 }
 
 .l-text{
-    color: #333;
+    color: #ddd;
     font-family:'Pacifico', cursive;;
     font-weight: 300;
     font-size: 28px;
 }
+
+/* -----------------------------------------cover section------------------------- */
+
+.cover{
+    height: 91vh;
+    top: 0;
+    background: url(../images/emile-perron-xrVDYZRGdw4-unsplash.jpg) center center/cover no-repeat;
+}
+.cover div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color:rgba(0, 0, 0, .5) ;
+}
+.cover h1{
+    font-size: 48px;
+    color: #ddd;
+}
+ .cover p{
+     color: #ddd;
+ }
+
+/* ---------------------------------------about me section------------------------------- */
+#about{
+    display: flex;
+    justify-content: space-around;
+}
+
