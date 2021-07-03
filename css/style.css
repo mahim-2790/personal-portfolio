@@ -5,9 +5,17 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     font-family: "Montserrat",'Roboto', sans-serif ;
     margin: 0 auto;
+}
+p{
+    line-height: 1.5rem;
 }
 
 a{
@@ -19,16 +27,24 @@ a{
     max-width: 1100px;
     margin: 0px auto;
 }
+
+.l-heading{
+    color:#333;
+    font-size: 48px;
+    font-weight: 700;
+    margin: 65px auto;
+}
 /* -----------------------nav bar--------------- */
 #nav-bar{
     display:flex;
     align-items: center;
     justify-content: space-between;
-    padding: .5rem 10rem;
+    padding: .5rem 7rem;
     position: sticky;
     top:0;
     background: rgba(0,0,0,.8);
     z-index: 1;
+    
 }
 
 #nav-bar .links{
@@ -38,6 +54,8 @@ a{
     font-weight: 400;
     border-radius: 5px;
 }
+
+
 
 .l-text{
     color: #ddd;
@@ -49,34 +67,64 @@ a{
 /* -----------------------------------------cover section------------------------- */
 
 .cover{
-    height: 91vh;
-    top: 0;
-    background: url(../images/emile-perron-xrVDYZRGdw4-unsplash.jpg) center center/cover no-repeat;
-}
-.cover div{
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0 2rem;
-    position: absolute;
+    height: 91vh;
     top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color:rgba(0, 0, 0, .5) ;
+    background:linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(../images/emile-perron-xrVDYZRGdw4-unsplash.jpg) center center/cover no-repeat;
 }
+
 .cover h1{
     font-size: 48px;
     color: #ddd;
 }
  .cover p{
      color: #ddd;
+     text-align: right;
  }
 
 /* ---------------------------------------about me section------------------------------- */
 #about{
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
+.a-con{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.a-con h1{
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+
+.about-image{
+    flex-basis: 45%;
+    margin-right: 4rem;
+    padding-left: 0px;
+}
+
+.about-me{
+    flex-basis: 48%;
+}
+
+
+.about-image img{
+    background: cover center/cover no-repeat;
+    width: 100%;
+    height: 35rem;
+}
+
+
+.a-con .about-me a{
+    display: inline-block;
+    margin-top: 30px;
+    background: #333;
+    padding: 5px 15px;
+}
