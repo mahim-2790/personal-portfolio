@@ -15,7 +15,7 @@ body {
   margin: 0 auto;
 }
 p {
-  line-height: 1.5rem;
+  line-height: 1.25rem;
 }
 
 a {
@@ -112,7 +112,11 @@ a {
 .about-me {
   flex-basis: 48%;
 }
-
+.about-me p {
+  margin-top: 30px;
+  text-align: left;
+  font-size: 0.98rem;
+}
 .about-image img {
   background: cover center/cover no-repeat;
   width: 100%;
@@ -122,7 +126,7 @@ a {
 
 .a-con .about-me a {
   display: inline-block;
-  margin-top: 30px;
+  margin-top: 35px;
   background: #333;
   padding: 5px 15px;
 }
