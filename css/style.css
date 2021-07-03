@@ -29,11 +29,11 @@ a{
 }
 
 .l-heading{
-    /* text-align: center; */
+    padding: 30px 0;
     color:#333;
     font-size: 48px;
     font-weight: 700;
-    margin: 60px 0px;
+    margin: 30px 0px;
 }
 /* -----------------------nav bar--------------- */
 #nav-bar{
@@ -134,11 +134,18 @@ a{
 
 /* ----------------------------------------------------------------skills section--------------------------------------- */
 
+
 #skills{
     text-align: center;
     display: flex;
     flex-direction: column;
 }
+
+.lang-skills h3{
+    padding: 5px;
+    margin-bottom: 15px;
+}
+
 .skill{
     display: flex;
     justify-content: space-between;
@@ -150,7 +157,7 @@ a{
     flex-basis: 18%;
     font-size: 1.5rem;
     font-weight: 400;
-    text-align: right;
+    text-align: left;
 }
 
 .bar{
@@ -174,6 +181,59 @@ a{
 .java-bar{
     width: 90%;
     background: #333;
+    border-radius: 10px;  
+}
+
+.py-bar{
+    width: 55%;
+    background: #333;
     border-radius: 10px;
-    
+}
+
+.html-bar{
+    width: 80%;
+    background: #333;
+    border-radius: 10px;
+}
+
+.css-bar{
+    width: 70%;
+    background: #333;
+    border-radius: 10px;
+}
+
+.sql-bar{
+    width: 75%;
+    background: #333;
+    border-radius: 10px;
+}
+
+.soft-skills h3{
+    padding: 5px;
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+
+.git-bar{
+    width: 50%;
+    background: #333;
+    border-radius: 10px;
+}
+
+.ms-bar{
+    width: 80%;
+    background: #333;
+    border-radius: 10px;
+}
+
+.ps-bar{
+    width: 45%;
+    background: #333;
+    border-radius: 10px;
+}
+
+.ai-bar{
+    width: 30%;
+    background: #333;
+    border-radius: 10px;
 }
