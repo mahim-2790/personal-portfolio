@@ -250,13 +250,13 @@ a {
 .project {
   flex-basis: 32%;
   height: 450px;
+  margin-right: 3rem;
 }
 
 .project-img {
   border-radius: 10px;
   height: 80%;
   overflow: hidden;
-  margin-right: 3.3rem;
 }
 .project-img img {
   background: cover center/cover no-repeat;
