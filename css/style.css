@@ -98,9 +98,9 @@ span {
   justify-content: center;
   height: 91vh;
   top: 0;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(../images/emile-perron-xrVDYZRGdw4-unsplash.jpg) center center/cover
-      no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../images/Holud3.jpg) right center/cover no-repeat;
+  background-size: 100% 100%;
 }
 .cover-text {
   display: flex;
@@ -351,4 +351,87 @@ span {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.contact-details {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 3rem;
+}
+.contact-info {
+  flex-basis: 45%;
+}
+.info {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+.info small {
+  color: rgba(7, 7, 7, 0.418);
+  margin-left: 2.3rem;
+  font-size: 1rem;
+}
+.info a {
+  color: #333;
+}
+.info a:hover {
+  text-decoration: underline;
+}
+.fas {
+  margin-right: 1rem;
+}
+.social a,
+h3 {
+  color: #333;
+}
+.social h3 {
+  margin: 2rem 0 1rem;
+  font-weight: 700;
+}
+.fab {
+  font-size: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.contact-form {
+  flex-basis: 55%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form input,
+textarea {
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  border: 1px solid #333;
+}
+
+form input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #d39d09;
+}
+
+form textarea {
+  height: 200px;
+}
+
+form button {
+  padding: 0.5rem;
+  display: inline-block;
+  border: none;
+  background: #333;
+  color: #ddd;
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+form button:hover {
+  background: #d39d09;
+  color: #333;
 }
