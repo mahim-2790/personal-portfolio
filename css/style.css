@@ -44,6 +44,10 @@ a {
   background-color: #ffbb00;
   margin: 10px auto;
 }
+span {
+  color: #d39d09;
+}
+
 /* -----------------------nav bar--------------- */
 #nav-bar {
   display: flex;
@@ -62,6 +66,21 @@ a {
   display: inline-block;
   font-weight: 400;
   border-radius: 5px;
+}
+#nav-bar .links a {
+  position: relative;
+}
+#nav-bar .links a::after {
+  content: "";
+  height: 2px;
+  width: 22%;
+  background-color: #ffbb00;
+  display: block;
+  transition: 0.25s ease-out;
+}
+
+#nav-bar .links a:hover::after {
+  width: 100%;
 }
 
 .l-text {
@@ -92,10 +111,32 @@ a {
   color: #ddd;
 }
 .cover p {
-  color: #ddd;
+  color: #ffbb00;
   text-align: right;
+  word-spacing: 0.25rem;
 }
 
+.cover p::after {
+  content: "";
+  animation: ann 10s infinite linear;
+}
+@keyframes ann {
+  0% {
+    content: "A Software Engineering Disciple.";
+  }
+  25% {
+    content: "A junior web developer.";
+  }
+  50% {
+    content: "A problem solver.";
+  }
+  75% {
+    content: "A programmer.";
+  }
+  100% {
+    content: "A student.";
+  }
+}
 /* ---------------------------------------about me section------------------------------- */
 #about {
   display: flex;
@@ -124,6 +165,9 @@ a {
 .about-me {
   flex-basis: 48%;
 }
+.about-me h1 span {
+  color: #ffbb00;
+}
 .about-me p {
   margin-top: 30px;
   text-align: left;
@@ -142,6 +186,10 @@ a {
   background: #333;
   padding: 5px 15px;
   border-radius: 5px;
+}
+.a-con .about-me a:hover {
+  background-color: #ffbb00;
+  color: #333;
 }
 
 /* ----------------------------------------------------------------skills section--------------------------------------- */
@@ -173,6 +221,7 @@ a {
 }
 .skill {
   margin-bottom: 1.5rem;
+  overflow: hidden;
 }
 
 .skill-name {
@@ -181,12 +230,33 @@ a {
   font-weight: 600;
   text-align: left;
 }
-
+.wraper {
+  height: 20px;
+  background-color: #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+}
 .bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
   color: #ddd;
-  text-align: center;
   background: #333;
   border-radius: 5px;
+  font-size: 1rem;
+  animation: anim 2s ease-out forwards;
+}
+
+@keyframes anim {
+  0% {
+    transform: translateX(-100%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 .c-bar {
@@ -243,21 +313,21 @@ a {
   justify-content: center;
   flex-wrap: wrap;
   align-items: center;
-  column-gap: 2.5rem;
-  row-gap: 3rem;
+  column-gap: 2rem;
+  row-gap: 2rem;
 }
 
 .project {
-  box-shadow: 0px 0px 15px 10px rgba(0, 0, 0, 0.15);
-  flex-basis: 30%;
-  height: 450px;
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.1);
+  flex-basis: 31%;
+  height: 400px;
   border-radius: 5px;
   padding: 0.75rem;
 }
 
 .project-img {
   border-radius: 5px;
-  height: 80%;
+  height: 68%;
   overflow: hidden;
 }
 .project-img img {
@@ -269,9 +339,16 @@ a {
 .project-text {
   text-align: center;
   margin-top: 20px;
-  height: 18%;
+  height: 30%;
 }
 
 .project-text p {
   font-size: 0.75rem;
+}
+
+/* ------------------contact-------------------- */
+#contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
