@@ -99,7 +99,8 @@ span {
   height: 91vh;
   top: 0;
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(../images/Holud3.jpg) right center/cover no-repeat;
+    url(../images/emile-perron-xrVDYZRGdw4-unsplash.jpg) right center/cover
+      no-repeat;
   background-size: 100% 100%;
 }
 .cover-text {
