@@ -51,19 +51,25 @@ span {
 /* -----------------------nav bar--------------- */
 #nav-bar {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
   padding: 0.5rem 7rem;
   position: sticky;
   top: 0;
   background: rgba(0, 0, 0, 0.8);
   z-index: 1;
 }
-
+.nav-links{
+  display: flex;
+}
+#nav-bar ul{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
 #nav-bar .links {
   list-style: none;
   padding: 0.75rem;
-  display: inline-block;
   font-weight: 400;
   border-radius: 5px;
 }
@@ -73,10 +79,10 @@ span {
 #nav-bar .links a::after {
   content: "";
   height: 2px;
-  width: 22%;
+  width: 0%;
   background-color: #ffbb00;
   display: block;
-  transition: 0.25s ease-out;
+  transition: 0.25s ease-in;
 }
 
 #nav-bar .links a:hover::after {
@@ -90,6 +96,15 @@ span {
   font-size: 28px;
 }
 
+.hamburger{
+  background-color: transparent;
+  color: #ddd;
+  border: 0;
+  font-weight: 400;
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: none;
+}
 /* -----------------------------------------cover section------------------------- */
 
 .cover {
@@ -389,6 +404,10 @@ h3 {
   margin: 2rem 0 1rem;
   font-weight: 700;
 }
+.media-link{
+  display: flex;
+  justify-content: start;
+ }
 .fab {
   font-size: 1.5rem;
   margin-right: 1.5rem;
@@ -434,5 +453,91 @@ form button {
 
 form button:hover {
   background: #d39d09;
-  color: #333;
+  color: rgb(24, 24, 24);
+}
+
+
+/* --------------footer----------- */
+footer{
+  background-color: #333;
+  color: #ddd;
+  margin-top: 1rem;
+  text-align: center;
+  padding: 2rem 0px;
+}
+
+/* ------------media query -------------- */
+
+@media (max-width: 668px) {
+  #nav-bar{
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  #nav-bar ul{
+    display: none;
+  }
+  #nav-ul.show{
+    display: flex;
+    
+  }
+  .hamburger{
+    display: block;
+  }
+  .cont {
+    max-width: 95%;
+    margin: auto auto;
+  }
+  .cover h1{
+    font-size: 36px;
+  }
+  .a-con{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .about-image{
+    margin-right: 0px;
+    margin-bottom: 2rem;
+  }
+  .about-me{
+    text-align: center;
+  }
+  .about-me h1{
+    font-size: 30px;
+  }
+  .project{
+    flex-basis: 95%;
+  }
+  .contact-details{
+    flex-direction: column;
+  } 
+  .social{
+    margin-bottom: 2rem;
+  }
+  .contact-form{
+  width: 95%;
+ }
+ .social h3 {
+  text-align: center;
+}
+.media-link{
+  justify-content: space-around;
+ }
+.fab {
+  margin-right: 0;
+}
+}
+
+@media (min-width:669px) and (max-width:1300px) {
+  .cont {
+    max-width: 85%;
+  }
+  .project{
+    flex-basis: 45%;
+    padding: 0px;
+  }
+  .contact-form {
+    flex-basis: 50%;
+  }
+  
 }
